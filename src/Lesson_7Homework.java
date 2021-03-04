@@ -29,9 +29,11 @@ public class Lesson_7Homework {
          }
      }
     public static void main(String[] args) {
-        System.out.println("Bir harf yazın.");
+        System.out.println("Bir harf yazın:");
         Scanner scanner=new Scanner(System.in);
         String harf=scanner.nextLine();
+
+        if(harf.length()==1){
 
 
         String str=harf.toLowerCase(Locale.ROOT);
@@ -52,6 +54,10 @@ public class Lesson_7Homework {
             default:
                 System.out.println("Geçersiz Karakter.");
 
+        }
+        }
+        else{
+        System.out.println("Lütfen tek bir harf giriniz.");
         }
     }
     public static void main(String[] args) {
@@ -91,9 +97,7 @@ public class Lesson_7Homework {
             case"Aralık":
                 System.out.println("Bu ay 31 gündür.");
                 break;
-            case"Subat":
-                System.out.println("Bu ay Subat ayıdır.");
-                break;
+
             case"Nisan":
             case"Haziran":
             case"Kasım":
@@ -123,6 +127,12 @@ public class Lesson_7Homework {
                 System.out.println("Gecersiz cevap sıkkı");
         }
     }*/
+    public static void main(String[] args) {
+
+        }
 
 
-}
+
+    }
+
+
