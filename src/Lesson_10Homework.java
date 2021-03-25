@@ -1,3 +1,4 @@
+import javax.xml.stream.events.Comment;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -21,7 +22,7 @@ public class Lesson_10Homework {
 
 
     }*/
-    public static void main(String args[]){
+    public static void main(String args[]) {
          /*
     list1 ArrayListine 5 tane eleman atayiniz,
     list2 adinda farkli bir ArrayList<String>
@@ -44,7 +45,7 @@ public class Lesson_10Homework {
 
         for (int i = 0; i < list2.size(); i++) {
             System.out.println((i+".nci eleman:"+list2.get(i)));
-        }*/
+        }
         ArrayList<Integer> list3= new ArrayList<>();
 
         list3.add(1);
@@ -80,12 +81,68 @@ public class Lesson_10Homework {
               }
           }
        System.out.println(Arrays.toString(a));
+        int[] array=new int[]{1,2,3,4,5};
+        int carpım=1;
+        for (Integer sayı: array
+                ) {
+            carpım *=sayı;
+        }
+        System.out.println(carpım);
+        ArrayList<Integer> list=new ArrayList<>();
+        list.add(2);
+        list.add(3);
+        list.add(4);
+        list.add(5);
+
+
+        int toplam=0;
+
+        for (Integer sayı:list)
+        {
+          double sayıların_karesi= Math.pow(sayı,2);
+
+          toplam +=sayıların_karesi;
+        }
+        System.out.println(toplam);
+
+        String[] array1 = new String[]{"Elma", "Armut", "Muz", "Kıvı", "Nar"};
+        String[] array2 = new String[]{"Elma", "Armut", "Portakal"};
+
+        for (String isim1 : array1) {
+            for (String isim2 : array2) {
+                if (isim1 == isim2) {
+                    System.out.println("Ortak eleman:"+ isim1);
+                }else{
+                    System.out.println("Ortak eleman yok");
+
+                }
+
+        }
+        }*/
+
+       String[] array=new String[]{"Barcelona"};
+
+        for (String isim:array
+             ) {
+            String[] harfler=isim.split(array[0]);
+            System.out.println(harfler);
+
+        }
+
+
+
+    }
+
+
+}
 
 
 
 
-           }
-       }
+
+
+
+
 
 
 
