@@ -29,8 +29,10 @@ public class DecimaltoBinary {
     }
 
     public static void main(String[] args) {
-     System.out.println(Converter());
-
+    System.out.println(Converter());
+       int sayi=123;
+      System.out.println("sayi= "+sayi%2);
+       System.out.println("sayi2="+sayi/2);
         }
 
     }
